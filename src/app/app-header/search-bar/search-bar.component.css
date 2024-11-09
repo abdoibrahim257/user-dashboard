@@ -1,0 +1,42 @@
+.inputField{
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+
+.searchArea{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.searchBar{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+
+.searchInput {
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+  }
+
+.searchIcon{
+    border: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+.searchIcon:focus{
+    outline: none;
+}
