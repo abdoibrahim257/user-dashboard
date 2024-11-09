@@ -19,8 +19,8 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    align-content: center;
-    gap: 26rem;
+    justify-content: center;
+    gap: 2rem;
 }
 #pageTitle{
     margin: 0;
