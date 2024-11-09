@@ -1,4 +1,4 @@
-<div class="userCard" *ngFor = "let user of users">
+<div  class="userCard" *ngFor = "let user of users" (click)="viewUser(user)">
     <div class = "cardHighlight">
         <!-- user avatar -->
         <img class = "userAvatar" [src]="user.avatar" [alt]="user.first_name + 'Avatar profile'">

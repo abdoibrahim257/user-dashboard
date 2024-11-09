@@ -2,4 +2,6 @@
 <div> 
     <!-- here is going to be our list of cards centered horizontaly -->
     <app-user-card class= "userList" [users]="userList"></app-user-card>
+    <!-- here is going to be our pagination -->
+    <app-pagination-controls [currentPage]="currentPage" [totalPages]="totalItems" (pageChange)="onPageChange($event)"></app-pagination-controls>
 </div>
