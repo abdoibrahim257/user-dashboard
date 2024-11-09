@@ -12,6 +12,11 @@
     width: 100%;
 }
 
+.searchBar:hover{
+    background-color: #d8e4ff;
+    transition: background-color 0.2s ease;
+}
+
 .searchBar{
     width:50%;
     display: flex;
