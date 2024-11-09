@@ -28,11 +28,16 @@ export class UserListComponent implements OnInit {
   }
 
   loadUsers(){
+
+    //loading screen on
+    
     this.userService.getUsers(this.currentPage).subscribe((data: any) => {
       this.userList = data.data;
       this.itemsPerPage = data.per_page;
       this.totalItems = data.total_pages;
     });
+
+    //loading screen off
   }
 
   onPageChange(page: number) {
