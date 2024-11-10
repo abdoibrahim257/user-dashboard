@@ -28,3 +28,19 @@
     background-color: #f0f0f0;
     cursor: not-allowed;
 }
+
+@media screen and (max-width: 1100px){
+
+    .pagination-controls > button{
+        width: 50px;
+        height: 25px;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+    }
+
+    .pagination-controls > span{
+        font-size: 0.7rem;
+    }
+    
+}
+

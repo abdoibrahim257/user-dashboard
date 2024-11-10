@@ -20,6 +20,23 @@
     
 }
 
+
+@media screen and (max-width: 600px){
+
+    .userList{
+        grid-template-columns: 1fr;
+    }
+
+    .listDiv{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+}
+
+
+
 .la-ball-clip-rotate,
 .la-ball-clip-rotate > div {
     position: relative;

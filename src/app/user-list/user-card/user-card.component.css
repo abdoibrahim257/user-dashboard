@@ -75,6 +75,7 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .cardHighlight-Profile{
@@ -90,4 +91,62 @@
 .cardHighlight>span{
     font-weight: 600;
     font-size: 25px;
+}
+
+
+@media screen and (max-width: 1100px){
+    .userCard{
+        width: 100%;
+        height: auto;
+        gap: 0.7rem;
+    }
+
+    .spanStyle{
+        font-size: 0.8rem;
+    }
+    
+    .cardHighlight{
+        justify-content: center;
+    }
+
+    .cardHighlight>span{
+        font-size: 1rem;
+    }
+
+    .userAvatar{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .userCard{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        padding: 0;
+        gap: 1rem;
+    }
+
+
+    .cardHighlight{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .cardHighlight>span{
+        font-size: 0.8rem;
+    }
+
+    .userDetails{
+        padding: 10px 0px;
+    }
+
+    .spanStyle{
+        font-size: 0.7rem;
+    }
+    
 }
