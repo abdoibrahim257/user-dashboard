@@ -11,6 +11,22 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+.userCard-Profile{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 16rem;
+    background-color: #efefef;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.userCard-Profile:hover{
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+    transform: scale(1.3)
+}
+
 .userCard:hover{
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
@@ -22,11 +38,25 @@
     object-fit: cover;
 }
 
+.userAvatar-Profile{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .userDetails{
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 1rem;
+}
+
+.userDetails-Profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
 .spanStyle{
@@ -45,6 +75,13 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+}
+
+.cardHighlight-Profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .cardHighlight>span>span{

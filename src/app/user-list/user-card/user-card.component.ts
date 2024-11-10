@@ -14,11 +14,12 @@ import { NgxPaginationModule } from 'ngx-pagination';
 export class UserCardComponent {
   //this has to be inputed from the parent component (user-list)
   @Input() users!: User[];
-  @Input() currentPage!: number;
-  @Input() totalItems!: number;
-  @Input() PerPage!: number;
+  @Input() pageType: string = 'home';
 
+
+  constructor(private router: Router) {}
+  
   viewUser(user: User) {
-    console.log(user);
+    this.router.navigate(['/user', user.id]);
   }
 }

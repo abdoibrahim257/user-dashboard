@@ -1,0 +1,8 @@
+.proFileCard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 15vh;
+}

@@ -1,13 +1,13 @@
-<div  class="userCard" *ngFor = "let user of users" (click)="viewUser(user)">
-    <div class = "cardHighlight">
+<a  class="userCard" [ngClass]="{'userCard-Profile' : pageType === 'user'}" *ngFor = "let user of users" (click)="viewUser(user)">
+    <div class = "cardHighlight" [ngClass]="{'cardHighlight-Profile' : pageType === 'user'}">
         <!-- user avatar -->
-        <img class = "userAvatar" [src]="user.avatar" [alt]="user.first_name + 'Avatar profile'">
+        <img [ngClass]="{'userAvatar' : pageType === 'home', 'userAvatar-Profile' : pageType === 'user'}" [src]="user.avatar" [alt]="user.first_name + 'Avatar profile'">
         <span class = "spanStyle"><span class="cardTemplate">User ID:</span> {{user.id}}</span>
     </div>
-    <div class="userDetails">
+    <div class="userDetails" [ngClass]="{'userDetails-Profile' : pageType === 'user'}">
         <!-- user information -->
         <span class = "spanStyle"><span class="cardTemplate">First Name:</span> {{user.first_name}}</span>
         <span class = "spanStyle"><span class="cardTemplate">Last Name:</span> {{user.last_name}}</span>
         <span class = "spanStyle"><span class="cardTemplate">Email:</span> {{user.email}}</span>
     </div>
-</div>
+</a>

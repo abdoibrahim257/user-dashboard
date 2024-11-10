@@ -8,6 +8,14 @@
     padding-bottom: 20px;
 }
 
+.newHeader{
+    background-color: #f0f0f0;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 20px;
+}
+
 .logo{
     width: 100px;
     height: 100px;
@@ -27,4 +35,24 @@
     align-self: center;
 }
 
+.backButton {
+    width: 70px;
+    height: 40px;
+    position: relative;
+    top: 4.5rem;
+    left: 7rem;
+    background-color: #406ab3;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    /* transition: box-shadow 0.3s ease; */
+}
 
+.btnClicked{
+    box-shadow: none;
+    background-color: #1e3150;
+}
+
+.backButton:hover{
+    background-color: #2e4c7e;
+}
