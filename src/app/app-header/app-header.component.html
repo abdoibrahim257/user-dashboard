@@ -1,4 +1,4 @@
-<div [ngClass]="pageType === 'home' ? 'header' : 'newHeader'">
+<div class="header" [ngClass]="{'newHeader': pageType === 'user'}">
     <!-- insert a back button -->
      <button *ngIf="pageType === 'user'" class="backButton" [ngClass]="{'btnClicked' : btnClicked}" (click) = "returnHome()"><mat-icon style="color: white;">arrow_back</mat-icon></button>
     <!-- create a header here with a search bar and a logo -->
